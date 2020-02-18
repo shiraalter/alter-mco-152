@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="" />
+    <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alter/projectile/Projectile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/projectile/Projectile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/alter/projectile/ProjectileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/alter/projectile/ProjectileTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -30,43 +37,70 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="alter.cashier" />
       <recent name="alter.projectile" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+      <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ProjectileMath">
-    <configuration name="ProjectileMath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="alter.projectile.ProjectileMath" />
+  <component name="RunManager" selected="JUnit.CashierTest.pay">
+    <configuration name="cashmain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.cashmain" />
       <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjectileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CashierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alter.projectile.*" />
+          <option name="PATTERN" value="alter.cashier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alter.projectile" />
-      <option name="MAIN_CLASS_NAME" value="alter.projectile.ProjectileTest" />
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashierTest.pay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
+      <option name="METHOD_NAME" value="pay" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -87,11 +121,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="alter.cashier in alter-mco-152" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProjectileMath" />
+        <item itemvalue="JUnit.CashierTest.pay" />
+        <item itemvalue="JUnit.CashierTest" />
         <item itemvalue="JUnit.ProjectileTest.getX" />
-        <item itemvalue="JUnit.ProjectileTest" />
+        <item itemvalue="Application.cashmain" />
+        <item itemvalue="JUnit.alter.cashier in alter-mco-152" />
       </list>
     </recent_temporary>
   </component>
@@ -112,61 +162,93 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Notifications" timestamp="1581628182758">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1581628182758" />
     <state x="233" y="0" key="#Project_Structure" timestamp="1581463791746">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1581463791746" />
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581466142069">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581649699662">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1581466142069" />
-    <state x="396" y="45" key="#xdebugger.evaluate" timestamp="1581466599817">
+    <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1581649699662" />
+    <state x="446" y="43" key="#com.intellij.ide.util.MemberChooser" timestamp="1581911622535">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="396" y="45" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1581466599817" />
-    <state width="1237" height="465" key="GridCell.Tab.0.bottom" timestamp="1581467345581">
+    <state x="446" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1581911622535" />
+    <state x="475" y="65" key="#xdebugger.evaluate" timestamp="1581638517783">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="465" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581467345581" />
-    <state width="1237" height="465" key="GridCell.Tab.0.center" timestamp="1581467345581">
+    <state x="475" y="65" key="#xdebugger.evaluate/0.0.1280.680@0.0.1280.680" timestamp="1581638517783" />
+    <state width="1237" height="433" key="GridCell.Tab.0.bottom" timestamp="1582056638993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="465" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1581467345581" />
-    <state width="1237" height="465" key="GridCell.Tab.0.left" timestamp="1581467345581">
+    <state width="1237" height="433" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582056638993" />
+    <state width="1237" height="433" key="GridCell.Tab.0.center" timestamp="1582056638993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="465" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1581467345581" />
-    <state width="1237" height="465" key="GridCell.Tab.0.right" timestamp="1581467345581">
+    <state width="1237" height="433" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582056638993" />
+    <state width="1237" height="433" key="GridCell.Tab.0.left" timestamp="1582056638993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="465" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1581467345581" />
-    <state width="1237" height="360" key="GridCell.Tab.1.bottom" timestamp="1581466601002">
+    <state width="1237" height="433" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582056638993" />
+    <state width="1237" height="433" key="GridCell.Tab.0.right" timestamp="1582056638993">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="360" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1581466601002" />
-    <state width="1237" height="360" key="GridCell.Tab.1.center" timestamp="1581466601001">
+    <state width="1237" height="433" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582056638993" />
+    <state width="1237" height="247" key="GridCell.Tab.1.bottom" timestamp="1582056311871">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="360" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1581466601001" />
-    <state width="1237" height="360" key="GridCell.Tab.1.left" timestamp="1581466601001">
+    <state width="1237" height="247" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582056311871" />
+    <state width="1237" height="247" key="GridCell.Tab.1.center" timestamp="1582056311870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="360" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1581466601001" />
-    <state width="1237" height="360" key="GridCell.Tab.1.right" timestamp="1581466601002">
+    <state width="1237" height="247" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582056311870" />
+    <state width="1237" height="247" key="GridCell.Tab.1.left" timestamp="1582056311870">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="360" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1581466601002" />
+    <state width="1237" height="247" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582056311870" />
+    <state width="1237" height="247" key="GridCell.Tab.1.right" timestamp="1582056311871">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582056311871" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1581647810645">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1581647810645" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1581896440292">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1581896440292" />
     <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581464828397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1280.680@0.0.1280.680" timestamp="1581464828397" />
-    <state x="412" y="45" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581463849889">
+    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1581647973154">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="412" y="45" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1581463849889" />
+    <state x="450" y="259" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1581647973154" />
+    <state x="412" y="45" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1582006812908">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="412" y="45" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.680@0.0.1280.680" timestamp="1582006812908" />
+    <state x="691" y="97" width="538" height="495" key="extract.method.dialog" timestamp="1582005149880">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="691" y="97" width="538" height="495" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1582005149880" />
     <state x="336" y="72" width="609" height="536" key="find.popup" timestamp="1581460963796">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="336" y="72" width="609" height="536" key="find.popup/0.0.1280.680@0.0.1280.680" timestamp="1581460963796" />
+    <state x="297" y="151" key="run.anything.popup" timestamp="1581992393224">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1581992393224" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582056499019">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582056499019" />
   </component>
 </project>

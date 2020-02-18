@@ -11,7 +11,6 @@ public class Projectile {
     private double time;
 
     public Projectile(double angle, double velocity) {
-
         this.angle = angle;
         this.velocity = velocity;
     }
@@ -25,7 +24,7 @@ public class Projectile {
     }
 
     public double getY() {
-        return velocity * sin((Math.toRadians(angle))) * time -EARTH_GRAVITY * time * time;
+        return velocity * sin((Math.toRadians(angle))) * time - EARTH_GRAVITY * time * time;
     }
 
     @Override
