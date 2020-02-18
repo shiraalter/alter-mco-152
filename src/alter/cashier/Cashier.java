@@ -64,27 +64,18 @@ public class Cashier {
                 changeDue -= 20.00;
                 register.decreaseTwentyDollars();
                 changeToReturn.addTwentyDollars();
-        /*    if (changeDue == 0) {
-                break;
-            }*/
             }
 
             while ((changeDue >= 10.00) && (register.getTenDollars() >= 1)) {
                 changeDue -= 10.00;
                 register.decreaseTenDollars();
                 changeToReturn.addTenDollars();
-        /*    if (changeDue == 0) {
-                break;
-            }*/
             }
 
             while ((changeDue >= 5.00) && (register.getFiveDollars() >= 1)) {
                 changeDue -= 5.00;
                 register.decreaseFiveDollars();
                 changeToReturn.addFiveDollars();
-          /*  if (changeDue == 0) {
-                break;
-            }*/
             }
 
             while ((changeDue >= 1.00) && (register.getOneDollars() >= 1)) {
