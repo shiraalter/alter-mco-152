@@ -21,45 +21,35 @@ public class Cashier {
     final double TEN = 10.00;
     final double TWENTY = 20.00;
 
+
     public Cashier(Cash register) {
         this.register = register;
     }
 
-    public Cash pay(double price, Cash paid) {
-        updateRegister(paid);
-        double customerPayment = calculateCustomerPayment(paid);
-        double changeDue = calculateChange(price, customerPayment);
-        return changeReturned(changeDue, register, paid, customerPayment);
-    }
+    public Cash pay(double price, Cash paid) throws NotEnoughChangeException, InsufficientPaymentException, BrokeCashierException {
+
+        Cash changeToReturn = new Cash();       //created change object here instead of in the if statement because of scope issue
+
+        double changeDue = (paid.totalCash() - price);
+        changeDue = Math.round(changeDue * 100.0) / 100.0;
+
+        if(register.totalCash() == 0) {
+            throw new BrokeCashierException();
+        }
+
+        if (paid.totalCash() < price) {
+            throw new InsufficientPaymentException();
+        }
+
+        if (register.totalCash() < changeDue) {
+            throw new NotEnoughChangeException();
+        }
+
+        //only add cash to register and calculate change if the conditions are met
+        if (paid.totalCash() >= changeDue && register.totalCash() >= changeDue && register.totalCash() != 0) {
+            updateRegisterCash(paid);
 
 
-    private double calculateCustomerPayment(Cash paid) {
-        double totalPayment = (PENNY * paid.getPennies()) + (NICKEL * paid.getNickels())
-                + (DIME * paid.getDimes()) + paid.getOneDollars() + (QUARTER * paid.getQuarters())
-                + (FIVE * paid.getFiveDollars()) + (TEN * paid.getTenDollars()) + (TWENTY * paid.getTwentyDollars());
-        return totalPayment;
-    }
-
-    //update the register after customer pays by combining the original amounts with the newly paid amounts
-    private void updateRegister(Cash paid) {
-        register.setPennies(register.getPennies() + paid.getPennies());
-        register.setNickels(register.getNickels() + paid.getNickels());
-        register.setDimes(register.getDimes() + paid.getDimes());
-        register.setOneDollars(register.getOneDollars() + paid.getOneDollars());
-        register.setFiveDollars(register.getFiveDollars() + paid.getFiveDollars());
-        register.setTenDollars(register.getTenDollars() + paid.getTenDollars());
-        register.setTwentyDollars(register.getTwentyDollars() + paid.getTwentyDollars());
-    }
-
-    private double calculateChange(double priceOfItem, double payment) {
-        return (Math.round((payment - priceOfItem) * 100) / 100.0);
-    }
-
-    private Cash changeReturned(double changeDue, Cash register, Cash paid, double customerPayment) {
-        Cash changeToReturn = new Cash();
-
-
-        if (customerPayment >= changeDue) {
             while ((changeDue >= 20.00) && (register.getTwentyDollars() >= 1)) {
                 changeDue -= 20.00;
                 register.decreaseTwentyDollars();
@@ -107,9 +97,25 @@ public class Cashier {
                 register.decreasePennies();
                 changeToReturn.addPennies();
             }
-            updateCustomerCash(paid, changeToReturn);
+            if(changeDue != 0) {
+                throw new NotEnoughChangeException();
+            }
+            updateCustomerCash(paid, changeToReturn);       //update customer cash based on change
+
         }
         return changeToReturn;
+    }
+
+
+    //update the register after customer pays by combining the original amounts with the newly paid amounts
+    private void updateRegisterCash(Cash paid) {
+        register.setPennies(register.getPennies() + paid.getPennies());
+        register.setNickels(register.getNickels() + paid.getNickels());
+        register.setDimes(register.getDimes() + paid.getDimes());
+        register.setOneDollars(register.getOneDollars() + paid.getOneDollars());
+        register.setFiveDollars(register.getFiveDollars() + paid.getFiveDollars());
+        register.setTenDollars(register.getTenDollars() + paid.getTenDollars());
+        register.setTwentyDollars(register.getTwentyDollars() + paid.getTwentyDollars());
     }
 
     private void updateCustomerCash(Cash paid, Cash changeToReturn) {
