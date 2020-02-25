@@ -20,12 +20,8 @@ public class Dictionary {
         }
     }
     public boolean wordExists(String word)   {
-        /* there was a bug that if a word was entered without a space at the end, and that word was part
-        of word that IS in the dictionary, it came back as true. This adds an automatic space so the user
-        can enter a word and the program reads it as its own word (not part of a word)
-         */
         word.toLowerCase();
-        String newWord = word + " ";
+        String newWord = word;
         return (dictionarySet.contains(newWord));
     }
 }
