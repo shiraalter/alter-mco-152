@@ -14,18 +14,18 @@ import sun.nio.cs.StreamEncoder;
 
 public class Cash {
     private int pennies, nickels, dimes, quarters, oneDollar, fiveDollars, tenDollars, twentyDollars;
+    final double PENNY = 0.01;
+    final double NICKEL = 0.05;
+    final double DIME = 0.10;
+    final double QUARTER = 0.25;
+    final double DOLLAR = 1.00;
+    final double FIVE = 5.00;
+    final double TEN = 10.00;
+    final double TWENTY = 20.00;
 
     public Cash() {
-        this.pennies = 0;
-        this.nickels = 0;
-        this.dimes = 0;
-        this.quarters = 0;
-        this.oneDollar = 0;
-        this.fiveDollars = 0;
-        this.tenDollars = 0;
-        this.twentyDollars = 0;
-
     }
+    //method for total cash
 
     public void setPennies(int pennies) {
         this.pennies = pennies;
@@ -154,6 +154,13 @@ public class Cash {
     public void decreaseTwentyDollars() {
         twentyDollars--;
     }
+
+    public double totalCash() {
+        return((PENNY * getPennies()) + (NICKEL * getNickels())
+                + (DIME * getDimes()) + (DOLLAR * getOneDollars())  + (QUARTER * getQuarters())
+                + (FIVE * getFiveDollars()) + (TEN * getTenDollars()) + (TWENTY * getTwentyDollars()));
+    }
+
 }
 
 
