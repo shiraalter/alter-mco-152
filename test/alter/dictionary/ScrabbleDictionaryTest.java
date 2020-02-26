@@ -17,7 +17,7 @@ public class ScrabbleDictionaryTest {
     @Test
     public void wordDoesNotExist() throws IOException {
         dictionary = new ScrabbleDictionary();
-        assertFalse(dictionary.wordExists("yo"));
+        assertFalse(dictionary.wordExists("asodij"));
 
     }
 
