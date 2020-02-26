@@ -46,7 +46,7 @@ public class Cashier {
         }
 
         //only add cash to register and calculate change if the conditions are met
-        if (paid.totalCash() >= changeDue && register.totalCash() >= changeDue && register.totalCash() != 0) {
+        if (paid.totalCash() >= price && register.totalCash() >= changeDue && register.totalCash() != 0) {
             updateRegisterCash(paid);
 
 
