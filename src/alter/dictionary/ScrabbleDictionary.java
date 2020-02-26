@@ -10,7 +10,7 @@ public class ScrabbleDictionary {
     Set<String> dictionarySet = new HashSet<String>();
 
     public ScrabbleDictionary() throws IOException {
-        File dictionaryFile = new File("C:\\Users\\Shira\\Desktop\\dictionary.txt");
+        File dictionaryFile = new File("dictionary.txt");
         Scanner scanner = new Scanner(dictionaryFile);
         while(scanner.hasNextLine()) {
             String word = scanner.next();

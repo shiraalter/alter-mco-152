@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Shira.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dictionary.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alter/dictionary/ScrabbleDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/dictionary/ScrabbleDictionary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +62,8 @@
       <recent name="groovy.util.GroovyTestCase" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152\src" />
+      <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ScrabbleDictionaryTest.wordDoesNotExist">
