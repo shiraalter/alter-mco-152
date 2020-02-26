@@ -44,54 +44,45 @@ public class Cashier {
         if (register.totalCash() < changeDue) {
             throw new NotEnoughChangeException();
         }
-
         //only add cash to register and calculate change if the conditions are met
         if (paid.totalCash() >= price && register.totalCash() >= changeDue && register.totalCash() != 0) {
+
             updateRegisterCash(paid);
-
-
             while ((changeDue >= 20.00) && (register.getTwentyDollars() >= 1)) {
                 changeDue -= 20.00;
                 register.decreaseTwentyDollars();
                 changeToReturn.addTwentyDollars();
             }
-
             while ((changeDue >= 10.00) && (register.getTenDollars() >= 1)) {
                 changeDue -= 10.00;
                 register.decreaseTenDollars();
                 changeToReturn.addTenDollars();
             }
-
             while ((changeDue >= 5.00) && (register.getFiveDollars() >= 1)) {
                 changeDue -= 5.00;
                 register.decreaseFiveDollars();
                 changeToReturn.addFiveDollars();
             }
-
             while ((changeDue >= 1.00) && (register.getOneDollars() >= 1)) {
                 changeDue -= 1.00;
                 register.decreaseOneDollar();
                 changeToReturn.addOneDollars();
             }
-
             while ((changeDue >= 0.25) && (register.getQuarters() >= 1)) {
                 changeDue -= 0.25;
                 register.decreaseQuarters();
                 changeToReturn.addQuarters();
             }
-
             while ((changeDue >= 0.10) && (register.getDimes() >= 1)) {
                 changeDue -= 0.10;
                 register.decreaseDimes();
                 changeToReturn.addDimes();
             }
-
             while ((changeDue >= 0.05) && (register.getNickels() >= 1)) {
                 changeDue -= 0.05;
                 register.decreaseNickels();
                 changeToReturn.addNickels();
             }
-
             while ((changeDue >= 0.01) && (register.getPennies() >= 1)) {
                 changeDue -= 0.01;
                 register.decreasePennies();

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -200,10 +201,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="274" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582062293957" />
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582674710102">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582677381755">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582674710102" />
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582677381755" />
     <state width="1237" height="179" key="GridCell.Tab.0.bottom" timestamp="1582676558021">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
