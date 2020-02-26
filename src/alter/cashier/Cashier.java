@@ -105,7 +105,7 @@ public class Cashier {
         }
         return changeToReturn;
     }
-    
+
     //update the register after customer pays by combining the original amounts with the newly paid amounts
     private void updateRegisterCash(Cash paid) {
         register.setPennies(register.getPennies() + paid.getPennies());

@@ -21,7 +21,7 @@ public class ScrabbleDictionary {
     public boolean wordExists(String word)   {
         word = word.toLowerCase();
         return (dictionarySet.contains(word));
-        
+
     }
 }
 
