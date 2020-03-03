@@ -112,7 +112,7 @@ the Cashier's money is unchanged from what it was at the beginning.
         assertEquals(3, cashInRegister.getOneDollars());
     }
 
-    @Test   //test if pay() throws exception, cashier $ will be unchanged
+    @Test   //test if pay() throws exception, cashier $ will be unchanged with starting off EMPTY
     public void emptyRegisterNotEnoughChange()  {
 
         //given
@@ -138,7 +138,7 @@ the Cashier's money is unchanged from what it was at the beginning.
     public void notEnoughChange() {
 
         //given
-        //price is 3, register is empty, customer pays 4
+        //price is 5, register has 2, payment is 10, chang = 5
         cashInRegister = new Cash();
         cashInRegister.setOneDollars(2);
         register = new Cashier(cashInRegister); //set register with 0 dollar
