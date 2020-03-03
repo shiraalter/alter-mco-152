@@ -19,7 +19,7 @@ public class CashierTest {
 
         Cash customer = new Cash();
         customer.setOneDollars(3);
-        double price = 2.49;
+        double price = 2.49;        //register owes .51
 
         //when
         Cash changeGiven = register.pay(price, customer);
@@ -92,8 +92,7 @@ the Cashier's money is unchanged from what it was at the beginning.
 
         //given
         cashInRegister = new Cash();
-        register = new Cashier(cashInRegister); //set register with 0 dollars
-
+        register = new Cashier(cashInRegister); //set register with 0 dollar
         double price = 3.00;
         customer = new Cash();
         customer.setOneDollars(3);
@@ -110,11 +109,54 @@ the Cashier's money is unchanged from what it was at the beginning.
         }
 
         //then
-        assertEquals(3.00, register.totalCash());
-
-
+        assertEquals(3, cashInRegister.getOneDollars());
     }
 
+    @Test   //test if pay() throws exception, cashier $ will be unchanged
+    public void emptyRegisterNotEnoughChange()  {
+
+        //given
+            //price is 3, register is empty, customer pays 4
+        cashInRegister = new Cash();
+        register = new Cashier(cashInRegister); //set register with 0 dollar
+        double price = 3.00;
+        customer = new Cash();
+        customer.setOneDollars(4);
+
+        //when
+        try {
+            register.pay(price, customer);
+        }
+
+        //then
+        catch (NotEnoughChangeException | InsufficientPaymentException | BrokeCashierException e) {
+            assertEquals(0, cashInRegister.getOneDollars());
+        }
+
+    }
+    @Test   //test if pay() throws exception, cashier $ will be unchanged
+    public void notEnoughChange() {
+
+        //given
+        //price is 3, register is empty, customer pays 4
+        cashInRegister = new Cash();
+        cashInRegister.setOneDollars(2);
+        register = new Cashier(cashInRegister); //set register with 0 dollar
+        double price = 5.00;
+        customer = new Cash();
+        customer.setOneDollars(10);
+
+        //when
+        try {
+            register.pay(price, customer);
+        }
+
+        //then
+        catch (NotEnoughChangeException | InsufficientPaymentException | BrokeCashierException e) {
+            assertEquals(2, cashInRegister.getOneDollars());
+        }
+
+    }
 
 
 }

@@ -4,6 +4,7 @@
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/alter/cashier/CashierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/alter/cashier/CashierTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,7 +43,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Groovy JUnit" value="groovy.util.GroovyTestCase" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intervPrac" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -66,8 +67,8 @@
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ScrabbleDictionaryTest.wordDoesNotExist">
-    <configuration name="CashierTest.notExactChange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CashierTest">
+    <configuration name="CashierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
@@ -77,70 +78,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="alter.cashier" />
       <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
-      <option name="METHOD_NAME" value="notExactChange" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScrabbleDictionaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alter-mco-152" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alter.dictionary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alter.dictionary" />
-      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleDictionaryTest.caseInsensitivity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CashierTest.exactPaymentEmptyRegister" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alter.dictionary.*" />
+          <option name="PATTERN" value="alter.cashier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alter.dictionary" />
-      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
-      <option name="METHOD_NAME" value="caseInsensitivity" />
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
+      <option name="METHOD_NAME" value="exactPaymentEmptyRegister" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleDictionaryTest.wordDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CashierTest.notEnoughChange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alter.dictionary.*" />
+          <option name="PATTERN" value="alter.cashier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alter.dictionary" />
-      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
-      <option name="METHOD_NAME" value="wordDoesNotExist" />
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
+      <option name="METHOD_NAME" value="notEnoughChange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleDictionaryTest.wordExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CashierTest.pay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alter.dictionary.*" />
+          <option name="PATTERN" value="alter.cashier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alter.dictionary" />
-      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
-      <option name="METHOD_NAME" value="wordExists" />
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
+      <option name="METHOD_NAME" value="pay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CashierTest.payMethodException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="alter.cashier" />
+      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
+      <option name="METHOD_NAME" value="payMethodException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ScrabbleDictionaryTest.wordDoesNotExist" />
-        <item itemvalue="JUnit.ScrabbleDictionaryTest" />
-        <item itemvalue="JUnit.ScrabbleDictionaryTest.wordExists" />
-        <item itemvalue="JUnit.ScrabbleDictionaryTest.caseInsensitivity" />
-        <item itemvalue="JUnit.CashierTest.notExactChange" />
+        <item itemvalue="JUnit.CashierTest" />
+        <item itemvalue="JUnit.CashierTest.notEnoughChange" />
+        <item itemvalue="JUnit.CashierTest.payMethodException" />
+        <item itemvalue="JUnit.CashierTest.pay" />
+        <item itemvalue="JUnit.CashierTest.exactPaymentEmptyRegister" />
       </list>
     </recent_temporary>
   </component>
@@ -181,6 +182,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1581463791746" />
+    <state x="360" y="0" key="#blob" timestamp="1582818044250">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="360" y="0" key="#blob/0.0.1280.680@0.0.1280.680" timestamp="1582818044250" />
     <state x="93" y="93" width="1095" height="495" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1581649699662">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -201,42 +206,42 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="274" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582062293957" />
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582677381755">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582818060128">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582677381755" />
-    <state width="1237" height="179" key="GridCell.Tab.0.bottom" timestamp="1582676558021">
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582818060128" />
+    <state width="1237" height="194" key="GridCell.Tab.0.bottom" timestamp="1583217879499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582676558021" />
-    <state width="1237" height="179" key="GridCell.Tab.0.center" timestamp="1582676558021">
+    <state width="1237" height="194" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583217879499" />
+    <state width="1237" height="194" key="GridCell.Tab.0.center" timestamp="1583217879498">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1582676558021" />
-    <state width="1237" height="179" key="GridCell.Tab.0.left" timestamp="1582676558021">
+    <state width="1237" height="194" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583217879498" />
+    <state width="1237" height="194" key="GridCell.Tab.0.left" timestamp="1583217879498">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1582676558021" />
-    <state width="1237" height="179" key="GridCell.Tab.0.right" timestamp="1582676558021">
+    <state width="1237" height="194" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583217879498" />
+    <state width="1237" height="194" key="GridCell.Tab.0.right" timestamp="1583217879499">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="179" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1582676558021" />
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom" timestamp="1582600570225">
+    <state width="1237" height="194" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583217879499" />
+    <state width="1237" height="334" key="GridCell.Tab.1.bottom" timestamp="1583216600491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1582600570225" />
-    <state width="1237" height="2" key="GridCell.Tab.1.center" timestamp="1582600570224">
+    <state width="1237" height="334" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583216600491" />
+    <state width="1237" height="334" key="GridCell.Tab.1.center" timestamp="1583216600491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1582600570224" />
-    <state width="1237" height="2" key="GridCell.Tab.1.left" timestamp="1582600570224">
+    <state width="1237" height="334" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1583216600491" />
+    <state width="1237" height="334" key="GridCell.Tab.1.left" timestamp="1583216600491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1582600570224" />
-    <state width="1237" height="2" key="GridCell.Tab.1.right" timestamp="1582600570225">
+    <state width="1237" height="334" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1583216600491" />
+    <state width="1237" height="334" key="GridCell.Tab.1.right" timestamp="1583216600491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="2" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1582600570225" />
+    <state width="1237" height="334" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1583216600491" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1581647810645">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -269,13 +274,13 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="91" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1582657654466" />
-    <state x="297" y="151" key="run.anything.popup" timestamp="1582084567369">
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup" timestamp="1583217136670">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="297" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1582084567369" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582056499019">
+    <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1583217136670" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582679397213">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582056499019" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582679397213" />
   </component>
 </project>

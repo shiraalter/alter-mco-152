@@ -40,14 +40,12 @@ public class Cashier {
         if (paid.totalCash() < price) {
             throw new InsufficientPaymentException();
         }
-
         if (register.totalCash() < changeDue) {
             throw new NotEnoughChangeException();
         }
-        //only add cash to register and calculate change if the conditions are met
-        if (paid.totalCash() >= price && register.totalCash() >= changeDue && register.totalCash() != 0) {
 
-            updateRegisterCash(paid);
+        //only add cash to register and calculate change if the conditions are met
+        if (paid.totalCash() >= price && register.totalCash() >= changeDue) {
             while ((changeDue >= 20.00) && (register.getTwentyDollars() >= 1)) {
                 changeDue -= 20.00;
                 register.decreaseTwentyDollars();
@@ -88,12 +86,13 @@ public class Cashier {
                 register.decreasePennies();
                 changeToReturn.addPennies();
             }
-            if(changeDue != 0) {
-                throw new NotEnoughChangeException();
-            }
-            updateCustomerCash(paid, changeToReturn);       //update customer cash based on change
-
+            updateRegisterCash(paid);
+            updateCustomerCash(paid, changeToReturn);
         }
+        if (Math.round(changeDue*100.0)/100.0 != 0) {
+            throw new NotEnoughChangeException();
+        }
+
         return changeToReturn;
     }
 
