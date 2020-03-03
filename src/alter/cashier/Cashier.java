@@ -86,11 +86,14 @@ public class Cashier {
                 register.decreasePennies();
                 changeToReturn.addPennies();
             }
-            updateRegisterCash(paid);
-            updateCustomerCash(paid, changeToReturn);
+
         }
         if (Math.round(changeDue*100.0)/100.0 != 0) {
             throw new NotEnoughChangeException();
+        }
+        else {
+            updateRegisterCash(paid);
+            updateCustomerCash(paid, changeToReturn);
         }
 
         return changeToReturn;
