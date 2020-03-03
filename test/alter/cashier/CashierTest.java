@@ -66,7 +66,8 @@ public class CashierTest {
     }
 
     @Test(expected = NotEnoughChangeException.class)
-    public void notExactChange() throws BrokeCashierException,NotEnoughChangeException,InsufficientPaymentException {
+    //test that exception will be thrown if register has enough money, but not exact change
+    public void notExactChangeException() throws BrokeCashierException,NotEnoughChangeException,InsufficientPaymentException {
         //given
         cashInRegister = new Cash();
         cashInRegister.setTwentyDollars(1);
@@ -141,10 +142,10 @@ the Cashier's money is unchanged from what it was at the beginning.
         //price is 5, register has 2, payment is 10, chang = 5
         cashInRegister = new Cash();
         cashInRegister.setOneDollars(2);
-        register = new Cashier(cashInRegister); //set register with 0 dollar
+        register = new Cashier(cashInRegister);
         double price = 5.00;
         customer = new Cash();
-        customer.setOneDollars(10);
+        customer.setTenDollars(1);
 
         //when
         try {
@@ -156,6 +157,29 @@ the Cashier's money is unchanged from what it was at the beginning.
             assertEquals(2, cashInRegister.getOneDollars());
         }
 
+    }
+
+    @Test
+    public void notExactChange(){
+            //Test that register & customer does not update when register has enough money but not exact change in bills
+        //given
+        cashInRegister = new Cash();
+        cashInRegister.setTenDollars(1);    //10$ bill
+        register = new Cashier(cashInRegister);
+        double price = 5.00;
+        customer = new Cash();
+        customer.setTenDollars(1);      //change = 5$ but register only has a 10 dollar bill
+
+        //when
+        try {
+            register.pay(price, customer);
+        }
+
+        //then
+        catch (NotEnoughChangeException | InsufficientPaymentException | BrokeCashierException e) {
+            assertEquals(1, cashInRegister.getTenDollars());
+            assertEquals(1, customer.getTenDollars());
+        }
     }
 
 
