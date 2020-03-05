@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/cashier/Cashier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/alter/cashier/CashierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/alter/cashier/CashierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alter/dictionary/ScrabbleFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/dictionary/ScrabbleFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,33 @@
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CashierTest">
+  <component name="RunManager" selected="Application.ProjectileFrame">
+    <configuration name="ProjectileFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alter.projectile.ProjectileFrame" />
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.projectile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScrabbleFrame" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleFrame" />
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.dictionary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashierTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
@@ -115,45 +140,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashierTest.pay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ScrabbleDictionaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="alter.cashier.*" />
+          <option name="PATTERN" value="alter.dictionary.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="alter.cashier" />
-      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
-      <option name="METHOD_NAME" value="pay" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CashierTest.payMethodException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alter-mco-152" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alter.cashier.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alter.cashier" />
-      <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierTest" />
-      <option name="METHOD_NAME" value="payMethodException" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="alter.dictionary" />
+      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProjectileFrame" />
+        <item itemvalue="JUnit.ScrabbleDictionaryTest" />
         <item itemvalue="JUnit.CashierTest" />
         <item itemvalue="JUnit.CashierTest.notExactChange" />
         <item itemvalue="JUnit.CashierTest.notEnoughChange" />
-        <item itemvalue="JUnit.CashierTest.payMethodException" />
-        <item itemvalue="JUnit.CashierTest.pay" />
       </list>
     </recent_temporary>
   </component>
@@ -210,22 +218,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582818060128" />
-    <state width="1237" height="98" key="GridCell.Tab.0.bottom" timestamp="1583265533660">
+    <state width="1237" height="236" key="GridCell.Tab.0.bottom" timestamp="1583414026376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583265533660" />
-    <state width="1237" height="98" key="GridCell.Tab.0.center" timestamp="1583265533658">
+    <state width="1237" height="236" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583414026376" />
+    <state width="1237" height="236" key="GridCell.Tab.0.center" timestamp="1583414026375">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583265533658" />
-    <state width="1237" height="98" key="GridCell.Tab.0.left" timestamp="1583265533658">
+    <state width="1237" height="236" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583414026375" />
+    <state width="1237" height="236" key="GridCell.Tab.0.left" timestamp="1583414026375">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583265533658" />
-    <state width="1237" height="98" key="GridCell.Tab.0.right" timestamp="1583265533659">
+    <state width="1237" height="236" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583414026375" />
+    <state width="1237" height="236" key="GridCell.Tab.0.right" timestamp="1583414026375">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="98" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583265533659" />
+    <state width="1237" height="236" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583414026375" />
     <state width="1237" height="334" key="GridCell.Tab.1.bottom" timestamp="1583216600491">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -278,9 +286,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1583217136670" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1582679397213">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1583413651209">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1582679397213" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1583413651209" />
   </component>
 </project>
