@@ -33,7 +33,7 @@ public class Cashier {
         double changeDue = (paid.totalCash() - price);
         changeDue = Math.round(changeDue * 100.0) / 100.0;
 
-        if(register.totalCash() == 0 && paid.totalCash() != price) {
+        if(register.totalCash() == 0 && paid.totalCash() > price) {
             throw new BrokeCashierException();
         }
 
