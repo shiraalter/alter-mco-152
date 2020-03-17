@@ -161,6 +161,18 @@ public class Cash {
                 + (FIVE * getFiveDollars()) + (TEN * getTenDollars()) + (TWENTY * getTwentyDollars()));
     }
 
+    public void clearCash(){
+        setPennies(0);
+        setNickels(0);
+        setDimes(0);
+        setQuarters(0);
+        setOneDollars(0);
+        setFiveDollars(0);
+        setTenDollars(0);
+        setTenDollars(0);
+        setTwentyDollars(0);
+    }
+
 }
 
 
