@@ -1,7 +1,5 @@
 package alter.dictionary;
 
-//put all member variables in jframe   ??
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
