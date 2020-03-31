@@ -6,6 +6,28 @@ import java.awt.*;
 public class ShapeComponent extends JComponent {
   //draw calls only happen in painComponent and with Graphics obj
   private String shape = "";
+  private int degrees  = 0;
+
+
+  public ShapeComponent() {
+    Thread thread = new Thread(){
+      @Override
+      public void run(){
+        super.run();
+        while(true){
+          repaint();
+          try {
+            Thread.sleep(20);
+          }
+          catch(InterruptedException e){
+            e.printStackTrace();
+          }
+        }
+      }
+    };
+    thread.start();
+  }
+////////
 
   @Override
   protected void paintComponent(Graphics g) {
@@ -17,6 +39,10 @@ public class ShapeComponent extends JComponent {
     int centerY = height / 2;
     g.translate(centerX, centerY);
 
+
+    Graphics2D image = (Graphics2D)g;
+    image.rotate(Math.toRadians(degrees));
+    degrees++;
 
     switch(shape) {
       case("Hamburger"):
