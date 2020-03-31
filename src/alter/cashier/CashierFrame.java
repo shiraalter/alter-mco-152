@@ -10,8 +10,9 @@ public class CashierFrame extends JFrame {
     private JTextArea changeText;
     private JPanel cashierPanel;
     private JPanel payPanel;
-    private JPanel pricePanel;
+    private JPanel leftPanel;
     private JPanel middlePanel;
+    private JTextArea runningTotal;
     private JButton penny;
     private JButton nickel;
     private JButton dime;
@@ -30,7 +31,7 @@ public class CashierFrame extends JFrame {
 
         setLayout(new BorderLayout());  //border layout
 
-        setSize(850, 500);
+        setSize(900, 800);
         setTitle("Cash Register");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -49,13 +50,19 @@ public class CashierFrame extends JFrame {
         middlePanel.add(changeText);
         add(middlePanel, BorderLayout.CENTER);
 
+
         //create price input
-        pricePanel = new JPanel();
+        leftPanel = new JPanel();
+        leftPanel.setLayout(new BoxLayout(leftPanel, BoxLayout.Y_AXIS));
         price = new JTextField();
         price.setBorder(BorderFactory.createTitledBorder("Price Of Item"));
-        price.setPreferredSize(new Dimension(160, 60));
-        pricePanel.add(price);
-        add(pricePanel, BorderLayout.WEST);
+        price.setPreferredSize(new Dimension(160, 20));
+        leftPanel.add(price);
+        //add running total to WEST
+        runningTotal = new JTextArea();
+        leftPanel.add(runningTotal);
+        add(leftPanel, BorderLayout.WEST);
+
 
         //create change button
         calculateChange = new JButton("Calculate Change");
@@ -73,6 +80,10 @@ public class CashierFrame extends JFrame {
                 changeText.setText("Please Enter a Price");
             }
         });
+
+
+
+
 
     }
 
@@ -97,14 +108,14 @@ public class CashierFrame extends JFrame {
 
 
         //Feedback to user how much updated cash customer & register have
-        //(values are correct after first round, but it doesn't "lock in" the amount for the second around so I commented it out)
-        /*changeText.setText("The Customer Now Has: " + customerCash.getPennies() + " Pennies, " + customerCash.getNickels() + " Nickels, "
+       /* //(values are correct after first round, but it doesn't "lock in" the amount for the second around so I commented it out)
+        runningTotal.setText("The Customer Now Has: \n" + customerCash.getPennies() + " Pennies, " + customerCash.getNickels() + " Nickels, \n"
                 + customerCash.getDimes() + " Dimes, " + customerCash.getQuarters() + " Quarters, \n" + customerCash.getOneDollars() + " One Dollar Bills, "
-                + customerCash.getFiveDollars() + " Five Dollar Bills, " + customerCash.getTenDollars() + " Ten Dollar Bills, " + customerCash.getTwentyDollars()
+                + customerCash.getFiveDollars() + " Five Dollar Bills, \n" + customerCash.getTenDollars() + " Ten Dollar Bills, " + customerCash.getTwentyDollars()
                 + " Twenty Dollar Bills.\n" +
-                "\nThe Register NOW has: " + cashInRegister.getPennies() + " Pennies, " + cashInRegister.getNickels() + " Nickels, "
+                "\nThe Register NOW has: \n" + cashInRegister.getPennies() + " Pennies, " + cashInRegister.getNickels() + " Nickels, \n"
                 + cashInRegister.getDimes() + " Dimes, " + cashInRegister.getQuarters() + " Quarters, \n" + cashInRegister.getOneDollars() + " One Dollar Bills, "
-                + cashInRegister.getFiveDollars() + " Five Dollar Bills, " + cashInRegister.getTenDollars() + " Ten Dollar Bills, " + cashInRegister.getTwentyDollars()
+                + cashInRegister.getFiveDollars() + " Five Dollar Bills, \n" + cashInRegister.getTenDollars() + " Ten Dollar Bills, " + cashInRegister.getTwentyDollars()
                 + " Twenty Dollar Bills.\n " + "-------------------------------------------------------------------"
                 + "\n\n Amount of Change Given: $" + changeReturned.totalCash());*/
 
@@ -128,15 +139,33 @@ public class CashierFrame extends JFrame {
         add(payPanel, BorderLayout.NORTH);
 
         //add money to customer cash object
+        //action listeners to incorporate running total as user clicks each button
         penny.addActionListener(actionEvent -> customerCash.addPennies());
+        penny.addActionListener(actionEvent -> runningTotal());
+
         nickel.addActionListener(actionEvent -> customerCash.addNickels());
+        nickel.addActionListener(actionEvent -> runningTotal());
+
         dime.addActionListener(actionEvent -> customerCash.addDimes());
+        dime.addActionListener(actionEvent -> runningTotal());
+
         quarter.addActionListener(actionEvent -> customerCash.addQuarters());
+        quarter.addActionListener(actionEvent -> runningTotal());
+
         oneDollar.addActionListener(actionEvent -> customerCash.addOneDollars());
+        oneDollar.addActionListener(actionEvent -> runningTotal());
+
         fiveDollar.addActionListener(actionEvent -> customerCash.addFiveDollars());
+        fiveDollar.addActionListener(actionEvent -> runningTotal());
+
         tenDollar.addActionListener(actionEvent -> customerCash.addTenDollars());
+        tenDollar.addActionListener(actionEvent -> runningTotal());
+
         twentyDollar.addActionListener(actionEvent -> customerCash.addTwentyDollars());
+        twentyDollar.addActionListener(actionEvent -> runningTotal());
+
         clearPayment.addActionListener(actionEvent -> customerCash.clearCash());
+        clearPayment.addActionListener(actionEvent -> runningTotal());
     }
 
     private void CashRegister() {
@@ -158,16 +187,48 @@ public class CashierFrame extends JFrame {
 
         //add money to register cash object on click
         penny.addActionListener(actionEvent -> cashInRegister.addPennies());
+        penny.addActionListener(actionEvent -> runningTotal());
+
         nickel.addActionListener(actionEvent -> cashInRegister.addNickels());
+        nickel.addActionListener(actionEvent -> runningTotal());
+
         dime.addActionListener(actionEvent -> cashInRegister.addDimes());
+        dime.addActionListener(actionEvent -> runningTotal());
+
         quarter.addActionListener(actionEvent -> cashInRegister.addQuarters());
+        quarter.addActionListener(actionEvent -> runningTotal());
+
         oneDollar.addActionListener(actionEvent -> cashInRegister.addOneDollars());
+        oneDollar.addActionListener(actionEvent -> runningTotal());
+
         fiveDollar.addActionListener(actionEvent -> cashInRegister.addFiveDollars());
+        fiveDollar.addActionListener(actionEvent -> runningTotal());
+
         tenDollar.addActionListener(actionEvent -> cashInRegister.addTenDollars());
+        tenDollar.addActionListener(actionEvent -> runningTotal());
+
         twentyDollar.addActionListener(actionEvent -> cashInRegister.addTwentyDollars());
+        twentyDollar.addActionListener(actionEvent -> runningTotal());
+
         clearRegister.addActionListener(actionEvent -> cashInRegister.clearCash());
+        clearRegister.addActionListener(actionEvent -> runningTotal());
 
 
+
+
+    }
+
+    //display running total
+    private void runningTotal() {
+        runningTotal.setText("The Customer Now Has: \n" + customerCash.getPennies() + " Pennies, " + customerCash.getNickels() + " Nickels, \n"
+                + customerCash.getDimes() + " Dimes, " + customerCash.getQuarters() + " Quarters, \n" + customerCash.getOneDollars() + " One Dollar Bills, "
+                + customerCash.getFiveDollars() + " Five Dollar Bills, \n" + customerCash.getTenDollars() + " Ten Dollar Bills, " + customerCash.getTwentyDollars()
+                + " Twenty Dollar Bills.\n" +
+                "\nThe Register NOW has: \n" + cashInRegister.getPennies() + " Pennies, " + cashInRegister.getNickels() + " Nickels, \n"
+                + cashInRegister.getDimes() + " Dimes, " + cashInRegister.getQuarters() + " Quarters, \n" + cashInRegister.getOneDollars() + " One Dollar Bills, "
+                + cashInRegister.getFiveDollars() + " Five Dollar Bills, \n" + cashInRegister.getTenDollars() + " Ten Dollar Bills, " + cashInRegister.getTwentyDollars()
+                + " Twenty Dollar Bills.\n " + "-------------------------------------------------------------------");
+               // + "\n\n Amount of Change Given: $" + changeReturned.totalCash());
     }
 
 
