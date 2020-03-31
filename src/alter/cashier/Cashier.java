@@ -10,17 +10,7 @@ Cash object (which will be what the consumer pays with) and returns another Cash
 write unit tests for the "pay" method.
  */
 public class Cashier {
-
-    Cash register = new Cash();
-
-    final double PENNY = 0.01;
-    final double NICKEL = 0.05;
-    final double DIME = 0.10;
-    final double QUARTER = 0.25;
-    final double FIVE = 5.00;
-    final double TEN = 10.00;
-    final double TWENTY = 20.00;
-
+    private Cash register;
 
     public Cashier(Cash register) {
         this.register = register;
@@ -33,7 +23,7 @@ public class Cashier {
         double changeDue = (paid.totalCash() - price);
         changeDue = Math.round(changeDue * 100.0) / 100.0;
 
-        if(register.totalCash() == 0 && paid.totalCash() > price) {
+        if (register.totalCash() == 0 && paid.totalCash() > price) {
             throw new BrokeCashierException();
         }
 
@@ -88,10 +78,9 @@ public class Cashier {
             }
 
         }
-        if (Math.round(changeDue*100.0)/100.0 != 0) {
+        if (Math.round(changeDue * 100.0) / 100.0 != 0) {
             throw new NotEnoughChangeException();
-        }
-        else {
+        } else {
             updateRegisterCash(paid);
             updateCustomerCash(paid, changeToReturn);
         }
