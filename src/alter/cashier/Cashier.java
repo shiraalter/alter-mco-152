@@ -10,7 +10,7 @@ Cash object (which will be what the consumer pays with) and returns another Cash
 write unit tests for the "pay" method.
  */
 public class Cashier {
-    private Cash register;
+    Cash register;
 
     public Cashier(Cash register) {
         this.register = register;
@@ -100,7 +100,7 @@ public class Cashier {
     }
 
     private void updateCustomerCash(Cash paid, Cash changeToReturn) {
-        /*update original customer "paid" object --> (I originally did not have this and
+        /*update original customer "paid" object --> ( originally did not have this and
             it was not tracking the changes in the customer cash object when change was given/cash was paid)*/
         paid.setPennies(changeToReturn.getPennies());
         paid.setNickels(changeToReturn.getNickels());
