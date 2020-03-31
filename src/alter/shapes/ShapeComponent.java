@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class ShapeComponent extends JComponent {
-  //draw calls only happen in painComponent and with Graphics obj
+  //draw calls only happen in paintComponent and with Graphics obj
   private String shape = "";
   private int degrees  = 0;
 
@@ -17,7 +17,7 @@ public class ShapeComponent extends JComponent {
         while(true){
           repaint();
           try {
-            Thread.sleep(20);
+            Thread.sleep(10);
           }
           catch(InterruptedException e){
             e.printStackTrace();

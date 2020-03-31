@@ -9,7 +9,7 @@ public class ShapesFrame extends JFrame {
 
     private JPanel panel;
     private JButton hamburger;
-    private JButton watermelon;
+    private JButton cookie;
     private JButton juice;
     private JButton hotDog;
 
@@ -30,12 +30,12 @@ public class ShapesFrame extends JFrame {
 
         //create and add buttons
         panel.add(hamburger = new JButton("Hamburger"));
-        panel.add(watermelon = new JButton("Cookie"));
+        panel.add(cookie = new JButton("Cookie"));
         panel.add(juice = new JButton("Juice Box"));
         panel.add(hotDog = new JButton("HotDog"));
 
         hamburger.addActionListener(actionEvent -> shapeComponent.setShape("Hamburger"));
-        watermelon.addActionListener(actionEvent -> shapeComponent.setShape("Cookie"));
+        cookie.addActionListener(actionEvent -> shapeComponent.setShape("Cookie"));
         juice.addActionListener(actionEvent -> shapeComponent.setShape("Juice"));
         hotDog.addActionListener(actionEvent -> shapeComponent.setShape("HotDog"));
 
