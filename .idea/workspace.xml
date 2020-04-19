@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alter-mco-152.iml" beforeDir="false" afterPath="$PROJECT_DIR$/alter-mco-152.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alter/weather/CurrentWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/weather/CurrentWeather.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
