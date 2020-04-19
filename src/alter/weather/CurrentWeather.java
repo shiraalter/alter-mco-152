@@ -24,6 +24,6 @@ public class CurrentWeather {
         String main;
         String description;
         String icon;
-        
+
     }
 }
