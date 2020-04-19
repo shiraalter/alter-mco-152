@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a1fbe14c-6b14-4574-8786-2e46d9a008b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alter/shapes/ShapeComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/shapes/ShapeComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alter/shapes/ShapesFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/alter/shapes/ShapesFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alter-mco-152.iml" beforeDir="false" afterPath="$PROJECT_DIR$/alter-mco-152.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +43,12 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../intervPrac" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gson-2.8.6.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -57,25 +56,39 @@
       <recent name="alter.cashier" />
       <recent name="alter.projectile" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152\src" />
+      <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
       <recent name="groovy.util.GroovyTestCase" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152" />
+      <recent name="C:\Users\Shira\Desktop\Programming\alter-mco-152\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ShapesFrame">
+  <component name="RunManager" selected="Application.GetCurrentWeather">
     <configuration name="CashierFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="alter.cashier.CashierFrame" />
       <module name="alter-mco-152" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="alter.cashier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetCurrentWeather" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="alter.weather.GetCurrentWeather" />
+      <module name="alter-mco-152" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="alter.weather.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,28 +150,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScrabbleDictionaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="alter-mco-152" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="alter.dictionary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="alter.dictionary" />
-      <option name="MAIN_CLASS_NAME" value="alter.dictionary.ScrabbleDictionaryTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetCurrentWeather" />
         <item itemvalue="Application.ShapesFrame" />
         <item itemvalue="Application.CashierFrame" />
         <item itemvalue="JUnit.CashierTest" />
         <item itemvalue="Application.ProjectileFrame" />
-        <item itemvalue="JUnit.ScrabbleDictionaryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -183,10 +181,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="0" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1581628182758" />
-    <state x="233" y="0" key="#Project_Structure" timestamp="1581463791746">
+    <state x="551" y="52" width="641" height="429" key="#Project_Structure" timestamp="1585696618555">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1581463791746" />
+    <state x="551" y="52" width="641" height="429" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1585696618555" />
     <state x="360" y="0" key="#blob" timestamp="1582818044250">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -199,6 +197,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1581911622535" />
+    <state x="566" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585698789856">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="566" y="257" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.680@0.0.1280.680" timestamp="1585698789856" />
     <state x="395" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582600450130">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -211,50 +213,50 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="274" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1582062293957" />
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1582818060128">
+    <state x="629" y="41" key="FileChooserDialogImpl" timestamp="1585696609164">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1582818060128" />
-    <state width="618" height="2" key="GridCell.Tab.0.bottom" timestamp="1585674177885">
+    <state x="629" y="41" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585696609164" />
+    <state width="759" height="321" key="GridCell.Tab.0.bottom" timestamp="1587337230650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585674177885" />
-    <state width="618" height="2" key="GridCell.Tab.0.center" timestamp="1585674177885">
+    <state width="759" height="321" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587337230650" />
+    <state width="759" height="321" key="GridCell.Tab.0.center" timestamp="1587337230650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585674177885" />
-    <state width="618" height="2" key="GridCell.Tab.0.left" timestamp="1585674177885">
+    <state width="759" height="321" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587337230650" />
+    <state width="759" height="321" key="GridCell.Tab.0.left" timestamp="1587337230650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585674177885" />
-    <state width="618" height="2" key="GridCell.Tab.0.right" timestamp="1585674177885">
+    <state width="759" height="321" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587337230650" />
+    <state width="759" height="321" key="GridCell.Tab.0.right" timestamp="1587337230650">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="618" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585674177885" />
-    <state width="676" height="332" key="GridCell.Tab.1.bottom" timestamp="1585016798773">
+    <state width="759" height="321" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587337230650" />
+    <state width="676" height="332" key="GridCell.Tab.1.bottom" timestamp="1585677269621">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="676" height="332" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585016798773" />
-    <state width="676" height="332" key="GridCell.Tab.1.center" timestamp="1585016798773">
+    <state width="676" height="332" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585677269621" />
+    <state width="676" height="332" key="GridCell.Tab.1.center" timestamp="1585677269621">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="676" height="332" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585016798773" />
-    <state width="676" height="332" key="GridCell.Tab.1.left" timestamp="1585016798773">
+    <state width="676" height="332" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585677269621" />
+    <state width="676" height="332" key="GridCell.Tab.1.left" timestamp="1585677269621">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="676" height="332" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585016798773" />
-    <state width="676" height="332" key="GridCell.Tab.1.right" timestamp="1585016798773">
+    <state width="676" height="332" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585677269621" />
+    <state width="676" height="332" key="GridCell.Tab.1.right" timestamp="1585677269621">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="676" height="332" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585016798773" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1585612197200">
+    <state width="676" height="332" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585677269621" />
+    <state x="284" y="0" key="SettingsEditor" timestamp="1585692851663">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585612197200" />
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1584995830974">
+    <state x="284" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585692851663" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog" timestamp="1587308538164">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584995830974" />
+    <state x="337" y="166" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1587308538164" />
     <state x="376" y="235" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1581464828397">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -283,9 +285,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="297" y="151" width="672" height="677" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1585626480094" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584417209711">
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1587328912660">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584417209711" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587328912660" />
   </component>
 </project>
