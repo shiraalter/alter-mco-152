@@ -1,6 +1,7 @@
 package alter.weather;
 
 import com.google.gson.Gson;
+import javafx.beans.property.adapter.JavaBeanLongPropertyBuilder;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +16,7 @@ public class CurrentWeatherFrame extends JFrame {
     private JPanel zipPanel;
     private JPanel infoPanel;
     private JPanel buttonPanel;
-
+    private JLabel zipLabel;
     private JTextField zipField;
     private JTextArea weatherData;
 
@@ -29,17 +30,22 @@ public class CurrentWeatherFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         zipPanel = new JPanel();
+        zipPanel.setLayout(new BoxLayout(zipPanel, BoxLayout.X_AXIS));
         zipField = new JTextField();
+        zipLabel = new JLabel("Zip Code");
+        zipPanel.add(zipLabel);
+
         zipPanel.add(zipField);
+        zipPanel.setPreferredSize(new Dimension(50, 20));
         add(zipPanel, BorderLayout.NORTH);
 
         infoPanel = new JPanel();
-        infoPanel.setBorder(BorderFactory.createTitledBorder("Weather Data"));
+       // infoPanel.setBorder(BorderFactory.createTitledBorder("Weather Data"));
         weatherData = new JTextArea();
         infoPanel.add(weatherData);
         add(infoPanel, BorderLayout.CENTER);
 
-
+        buttonPanel = new JPanel();
         enterButton = new JButton("Enter");
         enterButton.addActionListener(actionEvent -> {
             try {
@@ -48,11 +54,10 @@ public class CurrentWeatherFrame extends JFrame {
                 weatherData.setText("Error. Please try again");
             }
         });
-        enterButton.add(buttonPanel);
-
+        buttonPanel.add(enterButton);
         clearButton = new JButton("Clear Data");
         clearButton.addActionListener(actionEvent -> clearData());
-        clearButton.add(buttonPanel);
+        buttonPanel.add(clearButton);
         add(buttonPanel, BorderLayout.SOUTH);
 
 
@@ -79,6 +84,6 @@ public class CurrentWeatherFrame extends JFrame {
 
 
     public static void main(String[] args) throws IOException {
-        new CurrentWeatherFrame().setVisible(true);
+        new alter.weather.CurrentWeatherFrame().setVisible(true);
     }
 }
