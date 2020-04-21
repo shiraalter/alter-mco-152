@@ -70,7 +70,7 @@ public class CurrentWeatherFrame extends JFrame {
 
     private void getWeatherInfo() throws IOException {
             GetCurrentWeather weatherInfo = new GetCurrentWeather();
-            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?zip="+ zipField.getText() + ",US&appid=f0294b71a48b8c8a985f8f63afeaba95");
+            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?zip="+ zipField.getText() + ",US&appid=f0294b71a48b8c8a985f8f63afeaba95&units=imperial");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             InputStream in = connection.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
