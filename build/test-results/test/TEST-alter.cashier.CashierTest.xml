@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="alter.cashier.CashierTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-21T23:23:03" hostname="LAPTOP-61KN8IT6" time="0.01">
+  <properties/>
+  <testcase name="pay" classname="alter.cashier.CashierTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
