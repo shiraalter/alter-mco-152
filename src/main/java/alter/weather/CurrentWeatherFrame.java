@@ -1,16 +1,15 @@
 package alter.weather;
 
-import com.google.gson.Gson;
-import javafx.beans.property.adapter.JavaBeanLongPropertyBuilder;
-
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 import javax.swing.*;
 import java.awt.*;
-import java.io.BufferedReader;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+
 
 public class CurrentWeatherFrame extends JFrame {
     private JPanel zipPanel;
@@ -22,8 +21,9 @@ public class CurrentWeatherFrame extends JFrame {
 
     private JButton enterButton;
     private JButton clearButton;
+   private Retrofit retrofit;
 
-    public CurrentWeatherFrame() throws IOException {
+    public CurrentWeatherFrame()  {
         setLayout(new BorderLayout());
         setSize(500, 300);
         setTitle("Local Weather Data");
@@ -51,8 +51,9 @@ public class CurrentWeatherFrame extends JFrame {
             try {
                 getWeatherInfo();
             } catch (IOException e) {
-                weatherData.setText("Error. Please try again");
+                e.printStackTrace();
             }
+
         });
         buttonPanel.add(enterButton);
         clearButton = new JButton("Clear Data");
@@ -61,7 +62,10 @@ public class CurrentWeatherFrame extends JFrame {
         add(buttonPanel, BorderLayout.SOUTH);
 
 
-
+         retrofit = new Retrofit.Builder()
+                .baseUrl("https://api.openweathermap.org/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
     }
 
     private void clearData() {
@@ -69,16 +73,28 @@ public class CurrentWeatherFrame extends JFrame {
     }
 
     private void getWeatherInfo() throws IOException {
-            GetCurrentWeather weatherInfo = new GetCurrentWeather();
-            URL url = new URL("https://api.openweathermap.org/data/2.5/weather?zip="+ zipField.getText() + ",US&appid=f0294b71a48b8c8a985f8f63afeaba95&units=imperial");
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            InputStream in = connection.getInputStream();
-            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-            Gson gson = new Gson();
-            CurrentWeather currentWeather = gson.fromJson(reader, CurrentWeather.class);
 
-            weatherData.setText("Location: " + currentWeather.name + "\nCurrent Temperature: " + currentWeather.main.temp +" degrees "
-                                    + "\nCurrent Weather: " + currentWeather.weather[0].main + "\nDescription: " + currentWeather.weather[0].description);
+        WeatherService service = retrofit.create(WeatherService.class);
+
+        service.getZip(zipField.getText()).enqueue(new Callback<CurrentWeather>() {
+            @Override
+            public void onResponse(Call<CurrentWeather> call, Response<CurrentWeather> response) {
+                CurrentWeather currentWeather = response.body();
+                if(response.body() != null) {
+                    weatherData.setText("Location: " + currentWeather.name + "\nCurrent Temperature: " + currentWeather.main.temp + " degrees "
+                            + "\nCurrent Weather: " + currentWeather.weather[0].main + "\nDescription: " + currentWeather.weather[0].description);
+                }
+                else {
+                    weatherData.setText("Error. Please try again");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<CurrentWeather> call, Throwable t) {
+                clearData();
+                t.printStackTrace();
+            }
+        });
 
     }
 
